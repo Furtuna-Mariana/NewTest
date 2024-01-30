@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 110vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(189, 100, 100);
+}
+
+*, ::before, *::after{
+    background-color:rgb(126, 115, 115);
+    border-radius: 30px 30px 30px 30px;
+}
+
+.container{
+    background-color: rgb(42, 39, 39);
+    border: 1px solid ;
+    padding: 2rem;
+    height: 40rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 0 50px rgb(88, 85, 85);
+}
+
+.container > .display{
+    height: 6rem;
+    width: 30rem;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column-reverse;
+    text-align: right;
+    padding-right: 1rem;
+    font-size: 5rem;
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: rgb(137, 123, 102);
+}
+
+.container > .buttons{
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: rgb(42, 39, 39);
+    padding-top: 3rem;
+}  
+
+.container > .buttons .button{
+    width: 6rem;
+    height: 4rem;
+    border-radius: 0 0 0 0;
+    font-size: 3rem;
+    color: white;
+    box-shadow: 0 0 5px grey;
+}
+
+.container > .buttons > #allClearButton{
+    background-color: black;
+}
+
+.container > .buttons > #deleteButton{
+    background-color: black;
+}
+
+.container > .buttons > #divideButton{
+    background-color: black;
+}
+
+.container > .buttons > #multiplyButton{
+    background-color: black;
+}
+
+.container > .buttons > #equalSpecial{
+    background-color: rgb(194, 72, 31);
+    grid-column: 4;
+    grid-row-start: 4;
+    grid-row-end: 6;
+    width: 6rem;
+    height: 9rem;
+    padding-top: 2.5rem;
+}
+
+.container > .buttons > #zeroSpecial{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    width: 14rem;
+    height: 4rem;
+}
